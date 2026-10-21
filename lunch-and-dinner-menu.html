@@ -156,6 +156,14 @@ nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   nav.classList.remove('open');
   toggle.setAttribute('aria-expanded', 'false');
 }));
+const header = document.querySelector('.site-header');
+const onScroll = () => {
+  const y = window.scrollY;
+  if (y > 60) header.classList.add('scrolled');
+  else if (y < 10) header.classList.remove('scrolled');
+};
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 try {
   const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(
     new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', weekday: 'short' }).format(new Date()));

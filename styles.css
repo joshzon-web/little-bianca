@@ -231,6 +231,19 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; line-height
   .shopfront-strip { height: 150px; }
 }
 
+/* Desktop & tablet: header and logo shrink once you scroll down */
+@media (min-width: 761px) {
+  .site-header .bar, .logo, .logo img { transition: height .3s ease; }
+  .site-header.scrolled .bar { height: 74px; }
+  .site-header.scrolled .logo { height: 40px; }
+  .site-header.scrolled .logo img { height: 53px; }
+}
+@media (min-width: 761px) and (max-width: 1024px) {
+  .site-header.scrolled .bar { height: 66px; }
+  .site-header.scrolled .logo { height: 34px; }
+  .site-header.scrolled .logo img { height: 45px; }
+}
+
 /* Mobile */
 @media (max-width: 760px) {
   :root { --header-h: 66px; }
