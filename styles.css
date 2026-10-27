@@ -76,7 +76,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; line-height
 .reviews .eyebrow { margin: 0 0 12px; font: 700 13px/1 var(--sans); letter-spacing: .4em; text-transform: uppercase; color: var(--orange); }
 .reviews h2 { font: italic 400 clamp(32px, 3.6vw, 46px)/1.1 var(--serif); letter-spacing: -0.02em; color: var(--green); }
 .reviews h2::after { content: ""; display: block; width: 56px; height: 1px; margin: 12px auto 14px; background: var(--orange); opacity: .7; }
-.reviews emr-simple-carousel { display: block; min-height: 100px; }
+.reviews emr-simple-carousel { display: block; min-height: 100px; text-align: left; } /* the section is centred; review cards should not inherit that */
 
 /* Wine & bar */
 .drinks { --bg: url(img/bg-plates.jpg); background-image: var(--bg); padding: 90px 16px; }
