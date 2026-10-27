@@ -102,10 +102,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; line-height
 /* Breakfast & brunch menu, laid out like the printed menu */
 .bm { --b-orange: #e8772e; max-width: 760px; margin: 0 auto 24px; background: var(--white); color: #2b2b2b; font-family: "Fira Mono", Menlo, monospace; padding: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
 .bm-top { display: grid; grid-template-columns: 1fr 1fr; align-items: center; border: 1px solid var(--b-orange); border-bottom: 0; padding: 18px 20px; }
-.bm-logo { display: grid; justify-items: center; color: var(--b-orange); }
-.bm-logo span { font: 500 11px/1 Jost, var(--sans); letter-spacing: .45em; margin-right: -.45em; color: #2b2b2b; }
-.bm-logo span + span { font-size: 30px; letter-spacing: .14em; margin: 4px -.14em 0 0; text-transform: uppercase; }
-.bm-logo svg { width: 120px; height: 10px; margin-top: 2px; }
+.menu-logo { display: block; height: auto; }
+.bm-top .menu-logo { width: 190px; justify-self: center; }
 .bm-top h2 { font: 400 14px/1.2 "Fira Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--b-orange); text-align: center; }
 .bm-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--b-orange); }
 .bm-cell { padding: 18px 18px 8px; }
@@ -139,6 +137,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; line-height
 /* Lunch & dinner menu */
 .lm { --lm-orange: #d85a22; --lm-navy: #33415f; position: relative; max-width: 1000px; margin: 0 auto 28px; padding: 56px 64px 48px; background: var(--white); color: #222; font-family: Jost, var(--sans); box-shadow: 0 10px 30px rgba(0,0,0,.25); }
 .lm-top { text-align: center; margin-bottom: 34px; }
+.lm-top .menu-logo { width: 210px; margin: 0 auto 18px; }
 .lm-kicker { margin: 0 0 6px; font: 500 12px/1 Jost, var(--sans); letter-spacing: .4em; text-transform: uppercase; color: var(--lm-orange); }
 .lm-top h2 { font: 300 clamp(38px, 4.4vw, 54px)/1.05 "Cormorant Garamond", Georgia, serif; letter-spacing: .06em; text-transform: uppercase; color: var(--lm-navy); }
 .lm-key { margin: 12px 0 0; font-size: 14px; color: #555; }
