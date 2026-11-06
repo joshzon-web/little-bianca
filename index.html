@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://cdn2.revw.me">
+<link rel="preconnect" href="https://lh3.googleusercontent.com">
 <link rel="preconnect" href="https://app.redrockrep.com.au" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,29 +94,8 @@
     <div class="reviews-inner">
       <p class="eyebrow">Guestbook</p>
       <h2>Words from our customers</h2>
-      <!-- Review Pixel -->
-<script type="text/javascript">
-!function(){var e,t=document;e=function(){if(window.EMRPixel)return console.info("EMR: Pixel already loaded");var e=t.createElement("script");e.defer=!0,e.src="https://cdn2.revw.me/js/pixel.js?t="+864e5*Math.ceil(new Date/864e5);var n=t.getElementsByTagName("script")[0];n.charset="utf-8",n.parentNode.insertBefore(e,n),e.onload=function(){EMRPixel.init("app.redrockrep.com.au",530)}},"interactive"===t.readyState||"complete"===t.readyState?e():t.addEventListener("DOMContentLoaded",e)}();
-</script><emr-simple-carousel widget-id="917c2cc0-31c4-4634-b88d-f819b3634ae6"></emr-simple-carousel>
-<!-- Review Pixel End -->
-<script>
-/* Restyle the review widget to match the site: it renders inside its own shadow root, so add our styles there (and again if it re-renders). */
-(function () {
-  var css = '\n.title, .subtitle { display: none !important; }\n.top-sliders { padding: 4px 0 8px; }\n.sliders { gap: 22px !important; }\n.slider { width: 300px !important; min-width: 300px !important; min-height: 0 !important; margin: 8px 0 !important; background: #fffdf9 !important; border: 1px solid rgba(51,46,45,.12) !important; border-top: 2px solid #de5021 !important; border-radius: 0 !important; box-shadow: 0 10px 22px -16px rgba(51,46,45,.45) !important; }\n.slider [style*="background"] { background: transparent !important; box-shadow: none !important; }\n.slider-container { box-sizing: border-box !important; background: transparent !important; padding: 24px 26px 22px !important; }\n.slider-container::before { content: "\\201D"; position: absolute; right: 18px; bottom: -34px; font: 400 120px/1 "Cormorant Garamond", Georgia, serif; color: rgba(222,80,33,.12); pointer-events: none; }\n.review-stars { margin-bottom: 10px !important; gap: 1px; }\n.review-stars svg { width: 15px !important; height: 15px !important; }\nstop[style*="249, 195, 32"] { stop-color: #de5021 !important; }\nstop[style*="179, 180, 180"] { stop-color: #e6dfd8 !important; }\n.review-source img { width: 18px !important; height: 18px !important; opacity: .9; }\n.emr-w-simple-list-review-time { font: 500 10.5px/1 Jost, Arial, sans-serif !important; letter-spacing: .18em !important; text-transform: uppercase; color: #8a817c !important; }\n.review-message { position: relative; margin-top: 12px; font: italic 400 18.5px/1.38 "Cormorant Garamond", Georgia, serif !important; color: #332e2d !important; max-height: calc(1.38em * 4) !important; -webkit-line-clamp: 4 !important; }\n.review-author { left: 26px !important; bottom: 18px !important; width: calc(100% - 52px) !important; }\n.review-author-info-wrapper { display: flex; align-items: center; gap: 11px; }\n.review-author-avatar-wrapper { flex: none; margin: 0 !important; line-height: 0; }\n.review-avatar { width: 34px !important; height: 34px !important; border-radius: 50% !important; object-fit: cover; box-shadow: 0 0 0 2px #fffdf9, 0 0 0 3px rgba(222,80,33,.35); }\n.review-author-name-wrapper span { font: 500 11.5px/1.2 Jost, Arial, sans-serif !important; letter-spacing: .14em !important; text-transform: uppercase; color: #332e2d !important; }\n.emr-verified-icon { opacity: .5; transform: scale(.85); }\n.emr-ri-root { display: none !important; }\n.slider-container > div { padding-right: 0 !important; }\n@media (max-width: 760px) {\n  .slider { width: 264px !important; min-width: 264px !important; }\n  .review-message { font-size: 17.5px !important; }\n}\n';
-  function apply(w) {
-    if (w.shadowRoot && !w.shadowRoot.getElementById('lb-review-style')) {
-      var st = document.createElement('style'); st.id = 'lb-review-style'; st.textContent = css; w.shadowRoot.appendChild(st);
-    }
-  }
-  var tries = 0, t = setInterval(function () {
-    var w = document.querySelector('emr-simple-carousel');
-    if (w && w.shadowRoot) {
-      apply(w); clearInterval(t);
-      new MutationObserver(function () { apply(w); }).observe(w.shadowRoot, { childList: true });
-    } else if (++tries > 120) clearInterval(t);
-  }, 250);
-})();
-</script>
+      <div class="lb-reviews" id="lb-reviews" aria-label="Reviews from Google"></div>
+      <script src="reviews.js" defer></script>
     </div>
   </section>
 </main>
