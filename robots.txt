@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://littlebianca.co.uk/sitemap.xml
+Sitemap: https://www.littlebianca.co.uk/sitemap.xml
